@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Manasite</title>
+  <link rel="stylesheet" type="text/css" href="Manamath.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-
 <body>
   <h1>Manasite</h1>
       <form>
@@ -16,11 +17,25 @@
                     rows = "30"
                     cols = "80">Put decklist here</textarea>
           </p>
-          <button type="button">Test your mana!</button>
+          <div id="gen">
+          <button class="btn btn-primary" type="submit">Test your mana!</button>
+          <br/><br/>
+
+          <legend>Found cards</legend>
+          <p>
+            <textarea id = "SecondTextArea"
+                    rows = "30"
+                    cols = "80">Found cards go here</textarea>
+          </p>
+          <div id="gen">
+
+          </div>
+
         </fieldset>
       </form>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/manasite.js"></script>
 </body>
 </html>
